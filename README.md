@@ -1,5 +1,5 @@
 # Neighborhood-map
-Udacity Full Stack Project- Neighborhood Map to view favorite places. Demo: https://vishwas-c.github.io/Neighborhood-map/
+Udacity Full Stack Project- Neighborhood Map to view favorite places nearby.
 
 This project builds a webpage which consists of a map of my neighborhood. There are map markers to point to my favourite places, a search function to easily discover these locations, and a listview to support simple browsing of all locations. A third-party API FourSquare and Google Maps API provides additional information about each of these locations. It is designed based on MVVM pattern using Knockout JS.
 
