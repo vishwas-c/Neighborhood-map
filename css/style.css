@@ -1,0 +1,129 @@
+.wrapper {
+    display: flex;
+    align-items: stretch;
+} 
+
+#sidebar.active {
+    margin-left: -250px;
+}
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+html,body {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+    padding-left: 10px;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+.navbar {
+    border-radius: 0px;   
+    margin-bottom: 0px;
+}
+
+.list-group-item {
+    margin: 0;
+    color: black;
+    border-left: solid;
+    border-bottom: solid;
+}
+.list-group-item:focus {
+    color: #fff;
+    background-color: rgb(34, 34, 34);
+    border-color: rgb(34, 34, 34);
+}
+
+.list-group-item:hover {
+    color: #f5f5f5;
+    background-color: #555;
+}
+
+#searchbar{
+margin-right: 40
+}
+
+.navbar-form{
+    padding-left: 0px;
+    padding-right: 30px;
+}
+
+/* The sidebar menu */
+.sidenav {
+    border-left: 10;
+    /* Full-height: remove this if you want "auto" height */
+    width: 225px; /* Set the width of the sidebar */
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 20; /* Stay at the top */
+    left: 10;
+    background-color: white; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #334fee;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+/* Makes the map responsive */
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+.iframe-container > *{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+#pano {
+    width: 200px;
+    height: 200px;
+}
